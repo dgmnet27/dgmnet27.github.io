@@ -9,35 +9,46 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
             margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
+            padding: 0 17px 0 17px;
+			background-color: #fff;
+            background-image: url(bg.png);
+			background-repeat: no-repeat;
+			background-position: 900px -70%;
             color: #212529;
         }
+		@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Change to scroll for smaller screens */
+    background-position: 155px -70%; /* Adjust the position for smaller screens */
+  }
+}
 		header {
             padding-top: 10px;
 			color: red;
         }
 		h1 {
-            color: red;
+            color: rgb(255, 0, 0);
 			line-height: 0;
         }
         h2 {
-            color: blue;
+            color: #000;
         }
 		h3 {
 			text-decoration: underline;
+			color: #fff;
         }
         p {
             margin-bottom: 20px;
-			color: #000;
+			color: #fff;
 			line-height: 1;
         }
         .message-box {
-            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 4px 4px 4px rgba(255, 0, 0, 1);
             max-width: 600px;
             margin: 20px auto;
             padding: 10px;
-            border-radius: 10px;
+            border-radius: 10px 70px 10px 70px;
+			background-color: rgba(5, 5, 5, 0.5)
         }
         footer {
             background-color: #f8f9fa;
